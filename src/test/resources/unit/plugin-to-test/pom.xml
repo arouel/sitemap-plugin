@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.sf.sitemap-plugin.unit</groupId>
+	<artifactId>sitemap-plugin-test</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.2-SNAPSHOT</version>
+	<inceptionYear>2012</inceptionYear>
+
+	<name>sitemap-plugin-test</name>
+	<description>Test generation of sitemap.xml.</description>
+	<url>http://maven.apache.org</url>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>net.sf.sitemap-plugin</groupId>
+				<artifactId>sitemap-plugin</artifactId>
+				<version>${project.version}</version>
+				<configuration>
+					<project implementation="net.sf.sitemapplugin.SitemapMavenProjectStub" />
+					<inputEncoding>ISO-8859-1</inputEncoding>
+					<outputEncoding>ISO-8859-1</outputEncoding>
+					<validate>true</validate>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<distributionManagement>
+		<site>
+			<id>foo</id>
+			<name>bar</name>
+		</site>
+	</distributionManagement>
+
+</project>
