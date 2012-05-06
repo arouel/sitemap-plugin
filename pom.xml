@@ -14,7 +14,7 @@
 	<packaging>maven-plugin</packaging>
 
 	<name>UADetector</name>
-	<description>The Sitemap-Plugin is a library to generate XML sitemaps for Maven 3.x projects.</description>
+	<description>The sitemap-plugin is a library for sitemaps generated after the Sitemap 0.90 protocol. All pages that to be listed in the sitemap will be read from the Site Descriptor, also known as site.xml. The Sitemap 0.90 protocol is an open standard supported by the main search engines including Google, Yahoo!, and Microsoft Bing.</description>
 	<url>http://sitemap-plugin.sourceforge.net/</url>
 	<inceptionYear>2012</inceptionYear>
 
